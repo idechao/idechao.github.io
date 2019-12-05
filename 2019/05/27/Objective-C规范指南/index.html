@@ -106,11 +106,11 @@
 <meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Objective-C规范指南">
-<meta property="og:url" content="http://yoursite.com/2019/05/27/Objective-C规范指南/index.html">
+<meta property="og:url" content="http://www.idechao.com/2019/05/27/Objective-C规范指南/index.html">
 <meta property="og:site_name" content="idechao">
 <meta property="og:description" content="点语法应该 始终 使用点语法来访问或者修改属性，访问其他实例时首选括号（对比下面的属性）。 推荐： 123view.backgroundColor = [UIColor orangeColor]; [UIApplication sharedApplication].delegate; 反对： 123[view setBackgroundColor:[UIColor orangeColor]];UI">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-30T02:12:50.376Z">
+<meta property="og:updated_time" content="2019-05-30T06:04:16.757Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Objective-C规范指南">
 <meta name="twitter:description" content="点语法应该 始终 使用点语法来访问或者修改属性，访问其他实例时首选括号（对比下面的属性）。 推荐： 123view.backgroundColor = [UIColor orangeColor]; [UIApplication sharedApplication].delegate; 反对： 123[view setBackgroundColor:[UIColor orangeColor]];UI">
@@ -123,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/27/Objective-C规范指南/">
+  <link rel="canonical" href="http://www.idechao.com/2019/05/27/Objective-C规范指南/">
 
 
 
@@ -413,7 +413,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/27/Objective-C规范指南/">
+    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/05/27/Objective-C规范指南/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="idechao">
@@ -473,11 +473,29 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-05-30 10:12:50" itemprop="dateModified" datetime="2019-05-30T10:12:50+08:00">2019-05-30</time>
+                <time title="Modified: 2019-05-30 14:04:16" itemprop="dateModified" datetime="2019-05-30T14:04:16+08:00">2019-05-30</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -723,8 +741,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/27/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2019/05/27/快速开始/" rel="next" title="快速开始">
+                <i class="fa fa-chevron-left"></i> 快速开始
               </a>
             
           </div>
@@ -732,6 +750,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/05/js学习笔记/" rel="prev" title="js学习笔记">
+                js学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -804,12 +826,43 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
               
 
               
@@ -818,12 +871,26 @@
                 <div class="site-state-item site-state-tags">
                   
                     
+                      <a href="/tags/">
+                    
+                  
+                    
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">tags</span>
-                  
+                  </a>
                 </div>
               
             </nav>
@@ -1104,7 +1171,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
