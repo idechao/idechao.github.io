@@ -110,7 +110,7 @@
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Creat">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.idechao.com/images/quickstart-category.png">
-<meta property="og:updated_time" content="2019-12-05T13:24:29.433Z">
+<meta property="og:updated_time" content="2019-12-09T15:50:36.102Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速开始">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Creat">
@@ -299,7 +299,7 @@
 
     
 
-    <a href="/books" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>Books</a>
+    <a href="/categories/books/" rel="section"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>Books</a>
 
   </li>
         
@@ -316,7 +316,7 @@
 
     
 
-    <a href="/movies" rel="section"><i class="menu-item-icon fa fa-fw fa-film"></i> <br>Movies</a>
+    <a href="/movies/" rel="section"><i class="menu-item-icon fa fa-fw fa-film"></i> <br>Movies</a>
 
   </li>
         
@@ -474,7 +474,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-12-05 21:24:29" itemprop="dateModified" datetime="2019-12-05T21:24:29+08:00">2019-12-05</time>
+                <time title="Modified: 2019-12-09 23:50:36" itemprop="dateModified" datetime="2019-12-09T23:50:36+08:00">2019-12-09</time>
               
             
           </span>
@@ -538,6 +538,15 @@
 <p>上述是markdown的引用方式，图片只能在文章中显示，但无法在首页中正常显示。</p>
 <p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="新建菜单menu存放归档文章"><a href="#新建菜单menu存放归档文章" class="headerlink" title="新建菜单menu存放归档文章"></a>新建菜单menu存放归档文章</h2><h3 id="如何新建文件到自定义目录menu下"><a href="#如何新建文件到自定义目录menu下" class="headerlink" title="如何新建文件到自定义目录menu下"></a>如何新建文件到自定义目录menu下</h3><p>新建的menu，里面设置路径的时候，要以category的方式来处理，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  Books: /categories/books/ || book # 这里是新增加的菜单</span><br><span class="line">  Movies: /movies/ || film</span><br><span class="line">  archives: /archives/ || archive</span><br></pre></td></tr></table></figure>
+<p>新建的文件就可以直接放到books文件夹下，这样就应该直接展示出来了。</p>
+<blockquote>
+<p>这里网上有描述说是需要加上 <code>categories: books</code> 或者 <code>type: books</code>，不过我直接放到目录下，没有设置是没问题的，所以我这里就先不设置了，如果不展示可以尝试设置一下</p>
+</blockquote>
+<h3 id="隐藏自定义菜单menu的评论"><a href="#隐藏自定义菜单menu的评论" class="headerlink" title="隐藏自定义菜单menu的评论"></a>隐藏自定义菜单menu的评论</h3><p>默认的新建菜单，下面都带有评论，可以直接关闭。</p>
+<p>打开自定义menu下的<code>index.md</code>文件，增加隐藏评论的语句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">comments: false</span><br></pre></td></tr></table></figure>
 <h2 id="category和tag理解"><a href="#category和tag理解" class="headerlink" title="category和tag理解"></a>category和tag理解</h2><p>拿超市的货品来作例子: </p>
 <ul>
 <li>Category 就是不同货架</li>
@@ -666,7 +675,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -794,7 +803,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-server"><span class="nav-number">2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">4.</span> <span class="nav-text">Deploy to remote sites</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多个category语法"><span class="nav-number">5.</span> <span class="nav-text">多个category语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子分类"><span class="nav-number">5.1.</span> <span class="nav-text">子分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多个分类"><span class="nav-number">5.2.</span> <span class="nav-text">多个分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo引用图片"><span class="nav-number">6.</span> <span class="nav-text">hexo引用图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#绝对路径"><span class="nav-number">6.1.</span> <span class="nav-text">绝对路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相对路径"><span class="nav-number">6.2.</span> <span class="nav-text">相对路径</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#category和tag理解"><span class="nav-number">7.</span> <span class="nav-text">category和tag理解</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-server"><span class="nav-number">2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">4.</span> <span class="nav-text">Deploy to remote sites</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多个category语法"><span class="nav-number">5.</span> <span class="nav-text">多个category语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子分类"><span class="nav-number">5.1.</span> <span class="nav-text">子分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多个分类"><span class="nav-number">5.2.</span> <span class="nav-text">多个分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo引用图片"><span class="nav-number">6.</span> <span class="nav-text">hexo引用图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#绝对路径"><span class="nav-number">6.1.</span> <span class="nav-text">绝对路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相对路径"><span class="nav-number">6.2.</span> <span class="nav-text">相对路径</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建菜单menu存放归档文章"><span class="nav-number">7.</span> <span class="nav-text">新建菜单menu存放归档文章</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何新建文件到自定义目录menu下"><span class="nav-number">7.1.</span> <span class="nav-text">如何新建文件到自定义目录menu下</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏自定义菜单menu的评论"><span class="nav-number">7.2.</span> <span class="nav-text">隐藏自定义菜单menu的评论</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#category和tag理解"><span class="nav-number">8.</span> <span class="nav-text">category和tag理解</span></a></li></ol></div>
             
 
           </div>
