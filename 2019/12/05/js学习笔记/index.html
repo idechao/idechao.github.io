@@ -102,18 +102,18 @@
 
 
 <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
-  <meta name="description" content="函数表达式使用函数表达的时候，在赋值的情况下，右边的函数带括号和不带括号，使用起来是不一样的，如定义函数： 123function sayHello() &amp;#123;    console.log(&amp;apos;hello~&amp;apos;)&amp;#125; 在赋值的时候，第一种直接使用sayHello，不带括号，如下： 123let hello = sayHellohello() // =&amp;gt; hel">
+  <meta name="description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象属性值的简写在有变量的情况下，对象可以直接简写为变量名，这样key就是变量的名字，值为实际变量的值，写法上可以直接省略value，如下： 12345678let name =">
 <meta name="keywords" content="学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js学习笔记">
 <meta property="og:url" content="http://www.idechao.com/2019/12/05/js学习笔记/index.html">
 <meta property="og:site_name" content="idechao">
-<meta property="og:description" content="函数表达式使用函数表达的时候，在赋值的情况下，右边的函数带括号和不带括号，使用起来是不一样的，如定义函数： 123function sayHello() &amp;#123;    console.log(&amp;apos;hello~&amp;apos;)&amp;#125; 在赋值的时候，第一种直接使用sayHello，不带括号，如下： 123let hello = sayHellohello() // =&amp;gt; hel">
+<meta property="og:description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象属性值的简写在有变量的情况下，对象可以直接简写为变量名，这样key就是变量的名字，值为实际变量的值，写法上可以直接省略value，如下： 12345678let name =">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-06T06:17:15.086Z">
+<meta property="og:updated_time" content="2019-12-11T02:47:52.825Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js学习笔记">
-<meta name="twitter:description" content="函数表达式使用函数表达的时候，在赋值的情况下，右边的函数带括号和不带括号，使用起来是不一样的，如定义函数： 123function sayHello() &amp;#123;    console.log(&amp;apos;hello~&amp;apos;)&amp;#125; 在赋值的时候，第一种直接使用sayHello，不带括号，如下： 123let hello = sayHellohello() // =&amp;gt; hel">
+<meta name="twitter:description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象属性值的简写在有变量的情况下，对象可以直接简写为变量名，这样key就是变量的名字，值为实际变量的值，写法上可以直接省略value，如下： 12345678let name =">
 
 
 
@@ -473,7 +473,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-12-06 14:17:15" itemprop="dateModified" datetime="2019-12-06T14:17:15+08:00">2019-12-06</time>
+                <time title="Modified: 2019-12-11 10:47:52" itemprop="dateModified" datetime="2019-12-11T10:47:52+08:00">2019-12-11</time>
               
             
           </span>
@@ -525,7 +525,36 @@
       
 
       
-        <h1 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h1><p>使用函数表达的时候，在赋值的情况下，右边的函数带括号和不带括号，使用起来是不一样的，如定义函数：</p>
+        <h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p>js基础可以参考：</p>
+<ul>
+<li><a href="https://wangdoc.com/javascript/" target="_blank" rel="noopener">网道 / WangDoc.com</a></li>
+<li><a href="https://zh.javascript.info/js" target="_blank" rel="noopener">javascript.info</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript" target="_blank" rel="noopener">MDN-JavaScript</a></li>
+</ul>
+<p>ES6可以参考下面两个，内容相差不大：</p>
+<ul>
+<li><a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener">ECMAScript 6 入门</a></li>
+<li><a href="http://caibaojian.com/es6/" target="_blank" rel="noopener">ES6入门文档</a></li>
+</ul>
+<h1 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h1><h2 id="属性值的简写"><a href="#属性值的简写" class="headerlink" title="属性值的简写"></a>属性值的简写</h2><p>在有变量的情况下，对象可以直接简写为变量名，这样<code>key</code>就是变量的名字，值为实际变量的值，写法上可以直接省略<code>value</code>，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let name = &apos;Tom&apos;</span><br><span class="line"></span><br><span class="line">let user = &#123;</span><br><span class="line">    name,</span><br><span class="line">    age: 30,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(user.name)</span><br></pre></td></tr></table></figure>
+<p>正常输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tom</span><br></pre></td></tr></table></figure>
+<h2 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h2><p>计算属性就是先声明一个变量，然后以<span style="color:red;font-weight:bold;">方括号</span>的形式来设置变量。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let name = &apos;随便起的name标识key&apos;</span><br><span class="line">let user = &#123;</span><br><span class="line">    [name]: &apos;Tom&apos;,</span><br><span class="line">&#125;</span><br><span class="line">console.log(user[name])</span><br></pre></td></tr></table></figure>
+<p>正常输出输出如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tom</span><br></pre></td></tr></table></figure>
+<p>设置和取值的时候都是以<span style="color:red;font-weight:bold;">方括号</span>的形式来设置的，如下直接使用点语法是获取不到的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(user.name)</span><br><span class="line"></span><br><span class="line">//输出</span><br><span class="line">undefined</span><br></pre></td></tr></table></figure>
+<p>这里在Symbol属性中有使用，可以参考下。</p>
+<h1 id="Symbol类型"><a href="#Symbol类型" class="headerlink" title="Symbol类型"></a>Symbol类型</h1><p><code>Symbol</code> 值表示唯一的标识符。</p>
+<p>可以使用 Symbol() 来创建这种类型的值。全局的使用<code>Symbol.for(key)</code>的方式，如果key存在，则使用，不存在，则创建。</p>
+<p>举例：隐藏属性。</p>
+<p>如原先可能有定义<code>id</code>字段，现在想新增一个唯一标识符，那不确定的情况下，不能直接设置<code>id</code>的值，会覆盖。这种情况下就使用<code>Symbol</code>唯一标识符。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let user = &#123;</span><br><span class="line">    name: &apos;bob&apos;,</span><br><span class="line">&#125;</span><br><span class="line">let id = Symbol(&apos;id&apos;);</span><br><span class="line">user[id] = &apos;new id&apos;</span><br><span class="line"></span><br><span class="line">console.log(user[id])</span><br></pre></td></tr></table></figure>
+<p>正常输出为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new id</span><br></pre></td></tr></table></figure>
+<h1 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h1><p>使用函数表达的时候，在赋值的情况下，右边的函数带括号和不带括号，使用起来是不一样的，如定义函数：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function sayHello() &#123;</span><br><span class="line">    console.log(&apos;hello~&apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在赋值的时候，第一种直接使用<code>sayHello</code>，不带括号，如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let hello = sayHello</span><br><span class="line">hello() // =&gt; hello</span><br><span class="line">hello // =&gt; 没有效果</span><br></pre></td></tr></table></figure>
@@ -800,7 +829,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#函数表达式"><span class="nav-number">1.</span> <span class="nav-text">函数表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法和函数的区别"><span class="nav-number">2.</span> <span class="nav-text">方法和函数的区别</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#参考链接"><span class="nav-number">1.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对象"><span class="nav-number">2.</span> <span class="nav-text">对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#属性值的简写"><span class="nav-number">2.1.</span> <span class="nav-text">属性值的简写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算属性"><span class="nav-number">2.2.</span> <span class="nav-text">计算属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Symbol类型"><span class="nav-number">3.</span> <span class="nav-text">Symbol类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数表达式"><span class="nav-number">4.</span> <span class="nav-text">函数表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法和函数的区别"><span class="nav-number">5.</span> <span class="nav-text">方法和函数的区别</span></a></li></ol></div>
             
 
           </div>
