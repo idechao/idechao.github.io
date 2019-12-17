@@ -102,18 +102,18 @@
 
 
 <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
-  <meta name="description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象属性值的简写在有变量的情况下，对象可以直接简写为变量名，这样key就是变量的名字，值为实际变量的值，写法上可以直接省略value，如下： 12345678let name =">
+  <meta name="description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象数组常用方法push/pop,shift/unshiftshift，返回删除的第一个元素; unshift就是在头部增加多个元素。 都会修改原数组，想要获取第一个，可以直接使用">
 <meta name="keywords" content="学习笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js学习笔记">
 <meta property="og:url" content="http://www.idechao.com/2019/12/05/js学习笔记/index.html">
 <meta property="og:site_name" content="idechao">
-<meta property="og:description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象属性值的简写在有变量的情况下，对象可以直接简写为变量名，这样key就是变量的名字，值为实际变量的值，写法上可以直接省略value，如下： 12345678let name =">
+<meta property="og:description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象数组常用方法push/pop,shift/unshiftshift，返回删除的第一个元素; unshift就是在头部增加多个元素。 都会修改原数组，想要获取第一个，可以直接使用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-13T16:07:28.750Z">
+<meta property="og:updated_time" content="2019-12-16T13:22:43.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js学习笔记">
-<meta name="twitter:description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象属性值的简写在有变量的情况下，对象可以直接简写为变量名，这样key就是变量的名字，值为实际变量的值，写法上可以直接省略value，如下： 12345678let name =">
+<meta name="twitter:description" content="参考链接js基础可以参考：  网道 / WangDoc.com javascript.info MDN-JavaScript  ES6可以参考下面两个，内容相差不大：  ECMAScript 6 入门 ES6入门文档  对象数组常用方法push/pop,shift/unshiftshift，返回删除的第一个元素; unshift就是在头部增加多个元素。 都会修改原数组，想要获取第一个，可以直接使用">
 
 
 
@@ -473,7 +473,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-12-14 00:07:28" itemprop="dateModified" datetime="2019-12-14T00:07:28+08:00">2019-12-14</time>
+                <time title="Modified: 2019-12-16 21:22:43" itemprop="dateModified" datetime="2019-12-16T21:22:43+08:00">2019-12-16</time>
               
             
           </span>
@@ -536,7 +536,41 @@
 <li><a href="https://es6.ruanyifeng.com/" target="_blank" rel="noopener">ECMAScript 6 入门</a></li>
 <li><a href="http://caibaojian.com/es6/" target="_blank" rel="noopener">ES6入门文档</a></li>
 </ul>
-<h1 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h1><h2 id="属性值的简写"><a href="#属性值的简写" class="headerlink" title="属性值的简写"></a>属性值的简写</h2><p>在有变量的情况下，对象可以直接简写为变量名，这样<code>key</code>就是变量的名字，值为实际变量的值，写法上可以直接省略<code>value</code>，如下：</p>
+<h1 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h1><h2 id="数组常用方法"><a href="#数组常用方法" class="headerlink" title="数组常用方法"></a>数组常用方法</h2><h3 id="push-pop-shift-unshift"><a href="#push-pop-shift-unshift" class="headerlink" title="push/pop,shift/unshift"></a>push/pop,shift/unshift</h3><p><code>shift</code>，返回删除的第一个元素; <code>unshift</code>就是在头部增加多个元素。</p>
+<p><span style="color:red; font-weight:bold">都会修改原数组</span>，想要获取第一个，可以直接使用<code>arr[0]</code>。</p>
+<h3 id="数组的拷贝"><a href="#数组的拷贝" class="headerlink" title="数组的拷贝"></a>数组的拷贝</h3><p>1、 优先考虑使用ES6的语法<code>...</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let arr1 = [1,2,3]</span><br><span class="line">let arr2 = [...arr1]</span><br><span class="line">arr2[0] = 0</span><br><span class="line">console.log(arr1) // =&gt; [ 1, 2, 3 ]</span><br><span class="line">console.log(arr2) // =&gt; [ 0, 2, 3 ]</span><br></pre></td></tr></table></figure>
+<p>2、 slice语法</p>
+<p>无需传递参数，或者从0到数组的长度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let arr1 = [1,2,3]</span><br><span class="line">let  arr2 = arr1.slice()</span><br><span class="line"></span><br><span class="line">arr2[0] = 0</span><br><span class="line"></span><br><span class="line">console.log(arr1)	// =&gt; [ 1, 2, 3 ]</span><br><span class="line">console.log(arr2)	// =&gt; [ 0, 2, 3 ]</span><br></pre></td></tr></table></figure>
+<p>3、 通过<code>Object.assign</code>方法复制:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let arr1 = [1,2,3]</span><br><span class="line">let arr2 = []</span><br><span class="line">Object.assign(arr2, arr1)</span><br><span class="line">arr2[0] = 0</span><br><span class="line">console.log(arr1) // =&gt; [ 1, 2, 3 ]</span><br><span class="line">console.log(arr2) // =&gt; [ 0, 2, 3 ]</span><br></pre></td></tr></table></figure>
+<h3 id="splice-添加，删除和插入元素"><a href="#splice-添加，删除和插入元素" class="headerlink" title="splice 添加，删除和插入元素"></a>splice 添加，删除和插入元素</h3><p>语法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.splice(index[, deleteCount, elem1, ..., elemN])</span><br></pre></td></tr></table></figure>
+<p>从 <code>index</code> 开始：删除 <code>deleteCount</code> 元素并在当前位置插入 <code>elem1, ..., elemN</code>。最后返回已删除元素的数组。</p>
+<p>可以将 <code>deleteCount</code> 设置为 0，<code>splice</code> 方法就能够插入元素而不用删除。</p>
+<p>这里和其他数组方法中，负向索引是允许的。它们从数组末尾计算位置。</p>
+<h3 id="slice-数组的子数组"><a href="#slice-数组的子数组" class="headerlink" title="slice 数组的子数组"></a>slice 数组的子数组</h3><p>它从所有元素的开始索引 <code>&quot;start&quot;</code> 复制到 <code>&quot;end&quot;</code> (不包括 <code>&quot;end&quot;</code>) 返回一个新的数组。<code>start</code> 和 <code>end</code> 都可以是负数，在这种情况下，从末尾计算索引。语法如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.slice(start, end)</span><br></pre></td></tr></table></figure>
+<p>如果不传参数，则表示复制整个数组，</p>
+<h3 id="concat-数组合并"><a href="#concat-数组合并" class="headerlink" title="concat 数组合并"></a>concat 数组合并</h3><p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr.concat(arg1, arg2...)</span><br></pre></td></tr></table></figure>
+<p>如下例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">let arr = [1, 2];</span><br><span class="line"></span><br><span class="line">// merge arr with [3,4]</span><br><span class="line">alert( arr.concat([3, 4])); // 1,2,3,4</span><br><span class="line"></span><br><span class="line">// merge arr with [3,4] and [5,6]</span><br><span class="line">alert( arr.concat([3, 4], [5, 6])); // 1,2,3,4,5,6</span><br><span class="line"></span><br><span class="line">// merge arr with [3,4], then add values 5 and 6</span><br><span class="line">alert( arr.concat([3, 4], 5, 6)); // 1,2,3,4,5,6</span><br></pre></td></tr></table></figure>
+<h3 id="indexOf-lastIndexOf-和-includes-查询数组"><a href="#indexOf-lastIndexOf-和-includes-查询数组" class="headerlink" title="indexOf/lastIndexOf 和 includes 查询数组"></a>indexOf/lastIndexOf 和 includes 查询数组</h3><ul>
+<li><code>arr.indexOf(item, from)</code> 从索引 <code>from</code> 查询 <code>item</code>，如果找到返回索引，否则返回 -1。</li>
+<li><code>arr.lastIndexOf(item, from)</code> — 和上面相同，只是从尾部开始查询。</li>
+<li><code>arr.includes(item, from)</code> — 从索引 <code>from</code> 查询 <code>item</code>，如果找到则返回 <code>true</code>。</li>
+</ul>
+<h3 id="find-和-findIndex-条件查询"><a href="#find-和-findIndex-条件查询" class="headerlink" title="find 和 findIndex 条件查询"></a>find 和 findIndex 条件查询</h3><p>语法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let result = arr.find(function(item, index, array) &#123;</span><br><span class="line">  // 如果查询到返回 true</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>如果它返回<code>true</code>，则查询停止，返回 <code>item</code>。如果没有查询到，则返回 <code>undefined</code>。</p>
+<p><strong>如果多个结果满足条件，则只返回第一个，或者说是查询到满足条件的结果之后，就不会继续查询了。</strong></p>
+<p>如下例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let users = [</span><br><span class="line">  &#123;id: 1, name: &quot;John&quot;&#125;,</span><br><span class="line">  &#123;id: 2, name: &quot;Pete&quot;&#125;,</span><br><span class="line">  &#123;id: 3, name: &quot;Mary&quot;&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">let user = users.find(item =&gt; item.id == 1);</span><br><span class="line"></span><br><span class="line">alert(user.name); // John</span><br></pre></td></tr></table></figure>
+<h3 id="filter-条件查询"><a href="#filter-条件查询" class="headerlink" title="filter 条件查询"></a>filter 条件查询</h3><p>语法类似<code>find</code>，不过返回的是满足条件的数组。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">let users = [</span><br><span class="line">  &#123;id: 1, name: &quot;John&quot;&#125;,</span><br><span class="line">  &#123;id: 2, name: &quot;Pete&quot;&#125;,</span><br><span class="line">  &#123;id: 3, name: &quot;Mary&quot;&#125;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">// 返回前两个用户的数组</span><br><span class="line">let someUsers = users.filter(item =&gt; item.id &lt; 3);</span><br><span class="line"></span><br><span class="line">alert(someUsers.length); // 2</span><br></pre></td></tr></table></figure>
+<h2 id="属性值的简写"><a href="#属性值的简写" class="headerlink" title="属性值的简写"></a>属性值的简写</h2><p>在有变量的情况下，对象可以直接简写为变量名，这样<code>key</code>就是变量的名字，值为实际变量的值，写法上可以直接省略<code>value</code>，如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let name = &apos;Tom&apos;</span><br><span class="line"></span><br><span class="line">let user = &#123;</span><br><span class="line">    name,</span><br><span class="line">    age: 30,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(user.name)</span><br></pre></td></tr></table></figure>
 <p>正常输出：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Tom</span><br></pre></td></tr></table></figure>
@@ -861,7 +895,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#参考链接"><span class="nav-number">1.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对象"><span class="nav-number">2.</span> <span class="nav-text">对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#属性值的简写"><span class="nav-number">2.1.</span> <span class="nav-text">属性值的简写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算属性"><span class="nav-number">2.2.</span> <span class="nav-text">计算属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Symbol类型"><span class="nav-number">3.</span> <span class="nav-text">Symbol类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">4.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数表达式"><span class="nav-number">5.</span> <span class="nav-text">函数表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法和函数的区别"><span class="nav-number">6.</span> <span class="nav-text">方法和函数的区别</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#参考链接"><span class="nav-number">1.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对象"><span class="nav-number">2.</span> <span class="nav-text">对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组常用方法"><span class="nav-number">2.1.</span> <span class="nav-text">数组常用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#push-pop-shift-unshift"><span class="nav-number">2.1.1.</span> <span class="nav-text">push/pop,shift/unshift</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组的拷贝"><span class="nav-number">2.1.2.</span> <span class="nav-text">数组的拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#splice-添加，删除和插入元素"><span class="nav-number">2.1.3.</span> <span class="nav-text">splice 添加，删除和插入元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#slice-数组的子数组"><span class="nav-number">2.1.4.</span> <span class="nav-text">slice 数组的子数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#concat-数组合并"><span class="nav-number">2.1.5.</span> <span class="nav-text">concat 数组合并</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#indexOf-lastIndexOf-和-includes-查询数组"><span class="nav-number">2.1.6.</span> <span class="nav-text">indexOf/lastIndexOf 和 includes 查询数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#find-和-findIndex-条件查询"><span class="nav-number">2.1.7.</span> <span class="nav-text">find 和 findIndex 条件查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#filter-条件查询"><span class="nav-number">2.1.8.</span> <span class="nav-text">filter 条件查询</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性值的简写"><span class="nav-number">2.2.</span> <span class="nav-text">属性值的简写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算属性"><span class="nav-number">2.3.</span> <span class="nav-text">计算属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Symbol类型"><span class="nav-number">3.</span> <span class="nav-text">Symbol类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">4.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数表达式"><span class="nav-number">5.</span> <span class="nav-text">函数表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#方法和函数的区别"><span class="nav-number">6.</span> <span class="nav-text">方法和函数的区别</span></a></li></ol></div>
             
 
           </div>
