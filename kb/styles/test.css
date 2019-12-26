@@ -1,0 +1,33 @@
+/* id给js用，class给css用 */
+/* 对于html而言，id和class都是dom元素的属性值。不同的地方在于id属性的值是唯一的，
+    而class属性值可以重复。*/
+
+p, ul {
+    color: red;
+    width: 500px;
+    border: 1px solid pink;
+}
+
+/* 使用的id的标签，这里需要使用#号来打头 */
+#first-id {
+    color: green;
+}
+
+/* 使用class的生活，这里需要使用.的方式来设置 */
+.first-class {
+    color: greenyellow;
+}
+
+/* Attribute selector */
+img[src] {
+    width: 200px;
+    height: 100px;
+}
+a[href="https://www.google.com"] {
+    background-color: lightcoral;
+}
+
+
+a:hover {
+    color: indigo;
+}

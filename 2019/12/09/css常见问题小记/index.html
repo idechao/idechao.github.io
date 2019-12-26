@@ -102,18 +102,18 @@
 
 
 <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
-  <meta name="description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本垂直居中这个方法只能将单行文本置中。只需要简单地把 line-height 设置为那个对象的 height 值就可以使文本居中了。 1&amp;lt;div id=&amp;quot;content&amp;quot;&amp;gt; Content here&amp;lt;/div&amp;gt; 1234#content &amp;#123;	height: 100px;	line-">
+  <meta name="description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本一行，超出显示…效果如下图：                 做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现">
 <meta name="keywords" content="css日常开发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css常见问题小记">
 <meta property="og:url" content="http://www.idechao.com/2019/12/09/css常见问题小记/index.html">
 <meta property="og:site_name" content="idechao">
-<meta property="og:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本垂直居中这个方法只能将单行文本置中。只需要简单地把 line-height 设置为那个对象的 height 值就可以使文本居中了。 1&amp;lt;div id=&amp;quot;content&amp;quot;&amp;gt; Content here&amp;lt;/div&amp;gt; 1234#content &amp;#123;	height: 100px;	line-">
+<meta property="og:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本一行，超出显示…效果如下图：                 做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-09T08:35:20.108Z">
+<meta property="og:updated_time" content="2019-12-26T11:29:40.548Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css常见问题小记">
-<meta name="twitter:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本垂直居中这个方法只能将单行文本置中。只需要简单地把 line-height 设置为那个对象的 height 值就可以使文本居中了。 1&amp;lt;div id=&amp;quot;content&amp;quot;&amp;gt; Content here&amp;lt;/div&amp;gt; 1234#content &amp;#123;	height: 100px;	line-">
+<meta name="twitter:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本一行，超出显示…效果如下图：                 做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现">
 
 
 
@@ -456,12 +456,24 @@
                 
               
 
-              <time title="Created: 2019-12-09 14:31:07 / Modified: 16:35:20" itemprop="dateCreated datePublished" datetime="2019-12-09T14:31:07+08:00">2019-12-09</time>
+              <time title="Created: 2019-12-09 14:31:07" itemprop="dateCreated datePublished" datetime="2019-12-09T14:31:07+08:00">2019-12-09</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-12-26 19:29:40" itemprop="dateModified" datetime="2019-12-26T19:29:40+08:00">2019-12-26</time>
               
             
           </span>
@@ -514,6 +526,19 @@
 
       
         <p>css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。</p>
+<h1 id="文本一行，超出显示…"><a href="#文本一行，超出显示…" class="headerlink" title="文本一行，超出显示…"></a>文本一行，超出显示…</h1><p>效果如下图：</p>
+<div style="display:flex;border:1px solid red;"><br>        <div style="text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            display:block;"><br>        做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现自动化接口测试、接口监控、模拟接口数据、生成接口文档、多人协作等。总之，对开发 Web API 来说，Postman 是一个非常好的工具。<br>        </div><br></div>
+
+<p>实例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- div元素 --&gt;</span><br><span class="line">&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;content&quot;&gt;</span><br><span class="line">    做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现自动化接口测试、接口监控、模拟接口数据、生成接口文档、多人协作等。总之，对开发 Web API 来说，Postman 是一个非常好的工具。</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- less语法如下 --&gt;</span><br><span class="line">.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line"></span><br><span class="line">    .content &#123;</span><br><span class="line">        text-overflow: ellipsis;</span><br><span class="line">        overflow: hidden;</span><br><span class="line">        white-space: nowrap;</span><br><span class="line">        </span><br><span class="line">        display: block;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，<code>content</code>标签里的前三个是必须的。</p>
+<p>虽然有时候测试的时候，hidden不写也生效了，但是规范一些，还是需要增加上。</p>
+<p><code>display: block;</code>这个，最好也是增加上，在不生效的情况，应该增加这个属性。</p>
+<h1 id="设置两个视图顶部对齐"><a href="#设置两个视图顶部对齐" class="headerlink" title="设置两个视图顶部对齐"></a>设置两个视图顶部对齐</h1><p>比如a需要设置顶部和b对齐，但是b的高度是自动撑开的，不知道本身的高度。</p>
+<p>这时候就可以在外面再包一层，然后a和b都设置为absolute，这样顶部就可以对齐了。</p>
 <h1 id="文本垂直居中"><a href="#文本垂直居中" class="headerlink" title="文本垂直居中"></a>文本垂直居中</h1><p>这个方法只能将单行文本置中。只需要简单地把 <code>line-height</code> 设置为那个对象的 height 值就可以使文本居中了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;content&quot;&gt; Content here&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#content &#123;</span><br><span class="line">	height: 100px;</span><br><span class="line">	line-height: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -660,7 +685,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -685,7 +710,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -710,7 +737,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -792,7 +821,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文本垂直居中"><span class="nav-number">1.</span> <span class="nav-text">文本垂直居中</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文本一行，超出显示…"><span class="nav-number">1.</span> <span class="nav-text">文本一行，超出显示…</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置两个视图顶部对齐"><span class="nav-number">2.</span> <span class="nav-text">设置两个视图顶部对齐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本垂直居中"><span class="nav-number">3.</span> <span class="nav-text">文本垂直居中</span></a></li></ol></div>
             
 
           </div>
