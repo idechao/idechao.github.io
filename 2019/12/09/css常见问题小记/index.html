@@ -102,18 +102,18 @@
 
 
 <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
-  <meta name="description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本一行，超出显示…效果如下图：                 做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现">
+  <meta name="description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 flex布局汇总参考链接： 知乎： https://zhuanlan.zhihu.com/p/25303493 容器上的属性 flex-direction：决定主轴的方向(即项目的排列方向)，默认值：row，主轴为水平方向，起点在左端。  flex-wrap：决定容器内项目是否可换行  flex-flow：flex-direction">
 <meta name="keywords" content="css日常开发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css常见问题小记">
 <meta property="og:url" content="http://www.idechao.com/2019/12/09/css常见问题小记/index.html">
 <meta property="og:site_name" content="idechao">
-<meta property="og:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本一行，超出显示…效果如下图：                 做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现">
+<meta property="og:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 flex布局汇总参考链接： 知乎： https://zhuanlan.zhihu.com/p/25303493 容器上的属性 flex-direction：决定主轴的方向(即项目的排列方向)，默认值：row，主轴为水平方向，起点在左端。  flex-wrap：决定容器内项目是否可换行  flex-flow：flex-direction">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-26T11:29:40.548Z">
+<meta property="og:updated_time" content="2019-12-27T06:17:30.108Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css常见问题小记">
-<meta name="twitter:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 文本一行，超出显示…效果如下图：                 做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现">
+<meta name="twitter:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 flex布局汇总参考链接： 知乎： https://zhuanlan.zhihu.com/p/25303493 容器上的属性 flex-direction：决定主轴的方向(即项目的排列方向)，默认值：row，主轴为水平方向，起点在左端。  flex-wrap：决定容器内项目是否可换行  flex-flow：flex-direction">
 
 
 
@@ -473,7 +473,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-12-26 19:29:40" itemprop="dateModified" datetime="2019-12-26T19:29:40+08:00">2019-12-26</time>
+                <time title="Modified: 2019-12-27 14:17:30" itemprop="dateModified" datetime="2019-12-27T14:17:30+08:00">2019-12-27</time>
               
             
           </span>
@@ -526,6 +526,32 @@
 
       
         <p>css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。</p>
+<h1 id="flex布局汇总"><a href="#flex布局汇总" class="headerlink" title="flex布局汇总"></a>flex布局汇总</h1><p>参考链接：</p>
+<p>知乎： <a href="https://zhuanlan.zhihu.com/p/25303493" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/25303493</a></p>
+<h2 id="容器上的属性"><a href="#容器上的属性" class="headerlink" title="容器上的属性"></a>容器上的属性</h2><ul>
+<li><p>flex-direction：决定主轴的方向(即项目的排列方向)，默认值：row，主轴为水平方向，起点在左端。</p>
+</li>
+<li><p>flex-wrap：决定容器内项目是否可换行</p>
+</li>
+<li>flex-flow：flex-direction 和 flex-wrap 的简写形式</li>
+<li>justify-content：定义了项目在主轴的对齐方式。</li>
+<li>align-items：定义了项目在交叉轴上的对齐方式</li>
+<li>align-content：定义了多根轴线的对齐方式，如果项目只有一根轴线，那么该属性将不起作用</li>
+</ul>
+<h2 id="item上的属性"><a href="#item上的属性" class="headerlink" title="item上的属性"></a>item上的属性</h2><ul>
+<li>order：定义项目在容器中的排列顺序，数值越小，排列越靠前，默认值为 0</li>
+<li>flex-basis：定义了在分配多余空间之前，项目占据的主轴空间，浏览器根据这个属性，计算主轴是否有多余空间；当主轴为水平方向的时候，当设置了 flex-basis，项目的宽度设置值会失效，flex-basis 需要跟 flex-grow 和 flex-shrink 配合使用才能发挥效果。</li>
+<li>flex-grow：定义项目的放大比例</li>
+<li>flex-shrink：定义了项目的缩小比例</li>
+<li>flex：flex-grow, flex-shrink 和 flex-basis的简写。快捷键如下：<ul>
+<li>flex: auto (1 1 auto) </li>
+<li>flex: none (0 0 auto)</li>
+<li>flex: 1； flex 取值为一个非负数字，则该数字为 flex-grow 值，flex-shrink 取 1，flex-basis 取 0%</li>
+<li>flex: 0；对应的三个值分别为 0 1 0%</li>
+<li>flex: 0%; flex: 24px; 当 flex 取值为一个长度或百分比，则视为 flex-basis 值，flex-grow 取 1，flex-shrink 取 1，有如下等同情况（注意 0% 是一个百分比而不是一个非负数字）</li>
+</ul>
+</li>
+</ul>
 <h1 id="文本一行，超出显示…"><a href="#文本一行，超出显示…" class="headerlink" title="文本一行，超出显示…"></a>文本一行，超出显示…</h1><p>效果如下图：</p>
 <div style="display:flex;border:1px solid red;"><br>        <div style="text-overflow: ellipsis;
             overflow: hidden;
@@ -821,7 +847,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#文本一行，超出显示…"><span class="nav-number">1.</span> <span class="nav-text">文本一行，超出显示…</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置两个视图顶部对齐"><span class="nav-number">2.</span> <span class="nav-text">设置两个视图顶部对齐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本垂直居中"><span class="nav-number">3.</span> <span class="nav-text">文本垂直居中</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#flex布局汇总"><span class="nav-number">1.</span> <span class="nav-text">flex布局汇总</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#容器上的属性"><span class="nav-number">1.1.</span> <span class="nav-text">容器上的属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#item上的属性"><span class="nav-number">1.2.</span> <span class="nav-text">item上的属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本一行，超出显示…"><span class="nav-number">2.</span> <span class="nav-text">文本一行，超出显示…</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置两个视图顶部对齐"><span class="nav-number">3.</span> <span class="nav-text">设置两个视图顶部对齐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本垂直居中"><span class="nav-number">4.</span> <span class="nav-text">文本垂直居中</span></a></li></ol></div>
             
 
           </div>
