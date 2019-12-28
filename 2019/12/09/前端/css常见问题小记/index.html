@@ -102,13 +102,18 @@
 
 
 <link href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="idechao">
-<meta property="og:url" content="http://www.idechao.com/index.html">
+  <meta name="description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 less参考less flex布局汇总参考链接：知乎： https://zhuanlan.zhihu.com/p/25303493 阮一峰总结：https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html 容器上的属性 flex-direction：决定主轴的方向(即项目的排列方向)">
+<meta name="keywords" content="css日常开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css常见问题小记">
+<meta property="og:url" content="http://www.idechao.com/2019/12/09/前端/css常见问题小记/index.html">
 <meta property="og:site_name" content="idechao">
+<meta property="og:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 less参考less flex布局汇总参考链接：知乎： https://zhuanlan.zhihu.com/p/25303493 阮一峰总结：https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html 容器上的属性 flex-direction：决定主轴的方向(即项目的排列方向)">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-12-27T08:37:36.702Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="idechao">
+<meta name="twitter:title" content="css常见问题小记">
+<meta name="twitter:description" content="css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。 less参考less flex布局汇总参考链接：知乎： https://zhuanlan.zhihu.com/p/25303493 阮一峰总结：https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html 容器上的属性 flex-direction：决定主轴的方向(即项目的排列方向)">
 
 
 
@@ -118,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="http://www.idechao.com/">
+  <link rel="canonical" href="http://www.idechao.com/2019/12/09/前端/css常见问题小记/">
 
 
 
@@ -128,7 +133,7 @@
   };
 </script>
 
-  <title>idechao</title>
+  <title>css常见问题小记 | idechao</title>
   
 
 
@@ -176,8 +181,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/idechao/idechao.github.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -216,7 +220,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -392,563 +396,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/12/27/books/小狗钱钱/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="idechao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="idechao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/12/27/books/小狗钱钱/" class="post-title-link" itemprop="url">小狗钱钱</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-12-27 22:47:46" itemprop="dateCreated datePublished" datetime="2019-12-27T22:47:46+08:00">2019-12-27</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-12-28 20:11:02" itemprop="dateModified" datetime="2019-12-28T20:11:02+08:00">2019-12-28</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/books/" itemprop="url" rel="index"><span itemprop="name">books</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;小狗钱钱是一本理财类的书，讲的主人公是个小孩子，在生活中，陷入财务危机，这个说的有点严重，应该说是缺钱了。然后收留了一直小狗，取名钱钱，小狗钱钱会说话，然后教会了主人公理财的方法。逐渐的，主人公的钱袋子就逐渐丰厚起来。
-&nbsp;&nbsp;&nbs
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/12/27/books/小狗钱钱/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/12/19/tools/VSCode使用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="idechao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="idechao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/12/19/tools/VSCode使用/" class="post-title-link" itemprop="url">VSCode使用</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-12-19 20:45:42 / Modified: 23:38:42" itemprop="dateCreated datePublished" datetime="2019-12-19T20:45:42+08:00">2019-12-19</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VSCode/" itemprop="url" rel="index"><span itemprop="name">VSCode</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              vscode是一个强大的编辑器。发现之后，就对其他编辑器没有什么想法了。
-下面就记录下来常用的一些操作和配置的东西。
-vscode介绍知乎上有vscode的一篇介绍，Visual Studio Code有哪些工程方面的亮点，值得阅读。
-快捷键设置编辑器操作:
-
- 隐藏左边目录栏 command + 
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/12/19/tools/VSCode使用/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/12/12/股票/股票投资实录/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="idechao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="idechao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/12/12/股票/股票投资实录/" class="post-title-link" itemprop="url">股票投资实录</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-12-12 23:32:19" itemprop="dateCreated datePublished" datetime="2019-12-12T23:32:19+08:00">2019-12-12</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-12-28 12:56:04" itemprop="dateModified" datetime="2019-12-28T12:56:04+08:00">2019-12-28</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/投资理财/" itemprop="url" rel="index"><span itemprop="name">投资理财</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          股票投资实录
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/12/12/股票/股票投资实录/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -980,10 +430,8 @@ vscode介绍知乎上有vscode的一篇介绍，Visual Studio Code有哪些工�
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/12/09/前端/css常见问题小记/" class="post-title-link" itemprop="url">css常见问题小记</a>
+          <h1 class="post-title" itemprop="name headline">css常见问题小记
+
               
             
           </h1>
@@ -1077,25 +525,64 @@ vscode介绍知乎上有vscode的一篇介绍，Visual Studio Code有哪些工�
       
 
       
-        
-          
-            <p>
-              css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。
-less参考less
-flex布局汇总参考链接：知乎： https://zhuanlan.zhihu.com/p/25303493
-阮一峰总结：https://www.ruanyifeng.com/blog/2015/07/flex-gr
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/12/09/前端/css常见问题小记/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <p>css日常开始时，遇到的问题，通过搜索找到的答案，做下总结。</p>
+<h1 id="less参考"><a href="#less参考" class="headerlink" title="less参考"></a>less参考</h1><p><a href="https://less.bootcss.com/" target="_blank" rel="noopener">less</a></p>
+<h1 id="flex布局汇总"><a href="#flex布局汇总" class="headerlink" title="flex布局汇总"></a>flex布局汇总</h1><p>参考链接：<br>知乎： <a href="https://zhuanlan.zhihu.com/p/25303493" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/25303493</a></p>
+<p>阮一峰总结：<a href="https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html" target="_blank" rel="noopener">https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html</a></p>
+<h2 id="容器上的属性"><a href="#容器上的属性" class="headerlink" title="容器上的属性"></a>容器上的属性</h2><ul>
+<li>flex-direction：决定主轴的方向(即项目的排列方向)，默认值：row，主轴为水平方向，起点在左端。</li>
+<li>flex-wrap：决定容器内项目是否可换行</li>
+<li>flex-flow：flex-direction 和 flex-wrap 的简写形式</li>
+<li>justify-content：定义了项目在主轴的对齐方式。</li>
+<li>align-items：定义了项目在交叉轴上的对齐方式</li>
+<li>align-content：定义了多根轴线的对齐方式，如果项目只有一根轴线，那么该属性将不起作用</li>
+</ul>
+<h2 id="item上的属性"><a href="#item上的属性" class="headerlink" title="item上的属性"></a>item上的属性</h2><ul>
+<li>order：定义项目在容器中的排列顺序，数值越小，排列越靠前，默认值为 0</li>
+<li>flex-basis：定义了在分配多余空间之前，项目占据的主轴空间，浏览器根据这个属性，计算主轴是否有多余空间；当主轴为水平方向的时候，当设置了 flex-basis，项目的宽度设置值会失效，flex-basis 需要跟 flex-grow 和 flex-shrink 配合使用才能发挥效果。</li>
+<li>flex-grow：定义项目的放大比例</li>
+<li>flex-shrink：定义了项目的缩小比例</li>
+<li>flex：flex-grow, flex-shrink 和 flex-basis的简写。快捷键如下：<ul>
+<li>flex: auto (1 1 auto) </li>
+<li>flex: none (0 0 auto)</li>
+<li>flex: 1； flex 取值为一个非负数字，则该数字为 flex-grow 值，flex-shrink 取 1，flex-basis 取 0%</li>
+<li>flex: 0；对应的三个值分别为 0 1 0%</li>
+<li>flex: 0%; flex: 24px; 当 flex 取值为一个长度或百分比，则视为 flex-basis 值，flex-grow 取 1，flex-shrink 取 1，有如下等同情况（注意 0% 是一个百分比而不是一个非负数字）</li>
+</ul>
+</li>
+</ul>
+<h1 id="文本一行，超出显示…"><a href="#文本一行，超出显示…" class="headerlink" title="文本一行，超出显示…"></a>文本一行，超出显示…</h1><p>效果如下图：</p>
+<div style="display:flex;border:1px solid red;"><br>        <div style="text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            display:block;"><br>        做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现自动化接口测试、接口监控、模拟接口数据、生成接口文档、多人协作等。总之，对开发 Web API 来说，Postman 是一个非常好的工具。<br>        </div><br></div>
+
+<p>实例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- div元素 --&gt;</span><br><span class="line">&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;content&quot;&gt;</span><br><span class="line">    做 Web 开发的同学应该比较熟悉 Postman ，一个 HTTP API 测试工具。它是一个基于 Electron 开发的客户端软件，支持 OSX，Window 和 Linux。Postman 功能非常强大，支持 REST，SOAP 和 GraphQL 请求，可以实现自动化接口测试、接口监控、模拟接口数据、生成接口文档、多人协作等。总之，对开发 Web API 来说，Postman 是一个非常好的工具。</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;!-- less语法如下 --&gt;</span><br><span class="line">.container &#123;</span><br><span class="line">    display: flex;</span><br><span class="line"></span><br><span class="line">    .content &#123;</span><br><span class="line">        text-overflow: ellipsis;</span><br><span class="line">        overflow: hidden;</span><br><span class="line">        white-space: nowrap;</span><br><span class="line">        </span><br><span class="line">        display: block;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中，<code>content</code>标签里的前三个是必须的。</p>
+<p>虽然有时候测试的时候，hidden不写也生效了，但是规范一些，还是需要增加上。</p>
+<p><code>display: block;</code>这个，最好也是增加上，在不生效的情况，应该增加这个属性。</p>
+<h1 id="list文本在一行，超出不展示"><a href="#list文本在一行，超出不展示" class="headerlink" title="list文本在一行，超出不展示"></a>list文本在一行，超出不展示</h1><ul>
+<li style="list-style: none"><input type="checkbox"> 设置高度固定</li>
+<li style="list-style: none"><input type="checkbox"> 设置flex-wrap: wrap; 貌似无需设置overflow: hidden;</li>
+</ul>
+<h1 id="设置两个视图顶部对齐"><a href="#设置两个视图顶部对齐" class="headerlink" title="设置两个视图顶部对齐"></a>设置两个视图顶部对齐</h1><p>比如a需要设置顶部和b对齐，但是b的高度是自动撑开的，不知道本身的高度。</p>
+<p>这时候就可以在外面再包一层，然后a和b都设置为absolute，这样顶部就可以对齐了。</p>
+<h1 id="文本垂直居中"><a href="#文本垂直居中" class="headerlink" title="文本垂直居中"></a>文本垂直居中</h1><p>这个方法只能将单行文本置中。只需要简单地把 <code>line-height</code> 设置为那个对象的 height 值就可以使文本居中了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;content&quot;&gt; Content here&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#content &#123;</span><br><span class="line">	height: 100px;</span><br><span class="line">	line-height: 100px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>优点：</p>
+<ul>
+<li>适用于所有浏览器</li>
+<li>无足够空间时不会被截断</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>只对文本有效(块级元素无效)</li>
+<li>多行时，断词比较糟糕</li>
+</ul>
+<p>这个方法在小元素上非常有用，例如使按钮文本或者单行文本居中。</p>
+
       
     </div>
 
@@ -1113,6 +600,12 @@ flex布局汇总参考链接：知乎： https://zhuanlan.zhihu.com/p/25303493
 
     <div>
       
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
     </div>
 
     
@@ -1121,403 +614,40 @@ flex布局汇总参考链接：知乎： https://zhuanlan.zhihu.com/p/25303493
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/12/07/books/富爸爸穷爸爸/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="idechao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="idechao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/12/07/books/富爸爸穷爸爸/" class="post-title-link" itemprop="url">富爸爸穷爸爸</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-12-07 23:28:46" itemprop="dateCreated datePublished" datetime="2019-12-07T23:28:46+08:00">2019-12-07</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-12-28 13:08:08" itemprop="dateModified" datetime="2019-12-28T13:08:08+08:00">2019-12-28</time>
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/books/" itemprop="url" rel="index"><span itemprop="name">books</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/css日常开发/" rel="tag"># css日常开发</a>
           
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-            <p>
-              看看
-
-              
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/12/07/books/富爸爸穷爸爸/#more" rel="contents">
-                Read more &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/12/07/books/富爸爸穷爸爸/" rel="next" title="富爸爸穷爸爸">
+                <i class="fa fa-chevron-left"></i> 富爸爸穷爸爸
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/12/05/前端/js学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="idechao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="idechao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/12/05/前端/js学习笔记/" class="post-title-link" itemprop="url">js学习笔记</a>
-              
             
-          </h1>
-        
+          </div>
 
-        <div class="post-meta">
-          <span class="post-time">
+          <span class="post-nav-divider"></span>
 
+          <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/12/12/股票/股票投资实录/" rel="prev" title="股票投资实录">
+                股票投资实录 <i class="fa fa-chevron-right"></i>
+              </a>
             
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-12-05 20:42:05" itemprop="dateCreated datePublished" datetime="2019-12-05T20:42:05+08:00">2019-12-05</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-12-27 11:51:56" itemprop="dateModified" datetime="2019-12-27T11:51:56+08:00">2019-12-27</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>
-              参考链接js基础可以参考：
-
-网道 / WangDoc.com
-javascript.info
-MDN-JavaScript
-
-ES6可以参考下面两个，内容相差不大：
-
-ECMAScript 6 入门
-ES6入门文档
-
-promise 重点！一个简单promise示例：
-// resolve结果le
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/12/05/前端/js学习笔记/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1527,376 +657,19 @@ promise 重点！一个简单promise示例：
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/05/27/iOS/Objective-C规范指南/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="idechao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="idechao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/27/iOS/Objective-C规范指南/" class="post-title-link" itemprop="url">Objective-C规范指南</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-27 22:18:32" itemprop="dateCreated datePublished" datetime="2019-05-27T22:18:32+08:00">2019-05-27</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-12-06 20:12:21" itemprop="dateModified" datetime="2019-12-06T20:12:21+08:00">2019-12-06</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              点语法应该 始终 使用点语法来访问或者修改属性，访问其他实例时首选括号（对比下面的属性）。
-推荐：
-view.backgroundColor = [UIColor orangeColor]; [UIApplication sharedApplication].delegate;
-反对：
-[view 
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/05/27/iOS/Objective-C规范指南/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.idechao.com/2019/05/27/快速开始/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="idechao">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="idechao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/27/快速开始/" class="post-title-link" itemprop="url">快速开始</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-05-27 17:42:42" itemprop="dateCreated datePublished" datetime="2019-05-27T17:42:42+08:00">2019-05-27</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-12-09 23:50:36" itemprop="dateModified" datetime="2019-12-09T23:50:36+08:00">2019-12-09</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/05/27/快速开始/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-
-    <div>
-      
-    </div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1916,8 +689,17 @@ view.backgroundColor = [UIColor orangeColor]; [UIApplication sharedApplication].
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -2066,6 +848,23 @@ view.backgroundColor = [UIColor orangeColor]; [UIApplication sharedApplication].
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#less参考"><span class="nav-number">1.</span> <span class="nav-text">less参考</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#flex布局汇总"><span class="nav-number">2.</span> <span class="nav-text">flex布局汇总</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#容器上的属性"><span class="nav-number">2.1.</span> <span class="nav-text">容器上的属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#item上的属性"><span class="nav-number">2.2.</span> <span class="nav-text">item上的属性</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本一行，超出显示…"><span class="nav-number">3.</span> <span class="nav-text">文本一行，超出显示…</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#list文本在一行，超出不展示"><span class="nav-number">4.</span> <span class="nav-text">list文本在一行，超出不展示</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置两个视图顶部对齐"><span class="nav-number">5.</span> <span class="nav-text">设置两个视图顶部对齐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本垂直居中"><span class="nav-number">6.</span> <span class="nav-text">文本垂直居中</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -2202,6 +1001,10 @@ view.backgroundColor = [UIColor orangeColor]; [UIApplication sharedApplication].
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.1"></script>
+<script src="/js/post-details.js?v=7.1.1"></script>
+
+
 
   
 
@@ -2217,6 +1020,37 @@ view.backgroundColor = [UIColor orangeColor]; [UIApplication sharedApplication].
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '45ca45655845aa4538f1',
+    clientSecret: 'f05e249ae7a6b54baebee74c77a68c54099bb8ae',
+    repo: 'gitalk',
+    owner: 'idechao',
+    admin: ['idechao'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
