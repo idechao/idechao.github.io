@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.idechao.com/"/>
-  <updated>2020-07-07T11:45:15.982Z</updated>
+  <updated>2020-07-08T09:59:07.258Z</updated>
   <id>http://www.idechao.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>charles抓包https显示unknown问题解决</title>
+    <link href="http://www.idechao.com/2020/07/08/web/charles-https/"/>
+    <id>http://www.idechao.com/2020/07/08/web/charles-https/</id>
+    <published>2020-07-08T02:30:55.000Z</published>
+    <updated>2020-07-08T09:59:07.258Z</updated>
+    
+    <content type="html"><![CDATA[<p>抓包前的工作，就不做详细介绍了， 网上有一大堆。这里主要记录下，我抓包的时候，一直显示unknown的原因。</p><p>问题描述：</p><p>按照网上的教程，比如 <a href="https://www.jianshu.com/p/ec0a38d9a8cf" target="_blank" rel="noopener">Charles抓包https</a>完整的配置完之后，charles一直显示unknown，无法显示。</p><p>解决：</p><p>在安装手机证书的时候，charles有提示，如下图：</p><p><img src="/images/charles-1.png" alt="install certificate"></p><p>就是说，安装的时候，需要链接到charles的代理上，也就手机端访问<code>chls.pro/ssl</code>之前，需要先链接到charles的代理才可以，手机上的证书需要和电脑端匹配才行的。</p><p>如此简单的操作，如此粗浅的逻辑，实在是。。。不应该</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;抓包前的工作，就不做详细介绍了， 网上有一大堆。这里主要记录下，我抓包的时候，一直显示unknown的原因。&lt;/p&gt;
+&lt;p&gt;问题描述：&lt;/p&gt;
+&lt;p&gt;按照网上的教程，比如 &lt;a href=&quot;https://www.jianshu.com/p/ec0a38d9a8cf&quot; ta
+      
+    
+    </summary>
+    
+      <category term="开发工具" scheme="http://www.idechao.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="开发工具" scheme="http://www.idechao.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>前端学习路线</title>

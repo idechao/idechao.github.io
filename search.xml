@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[charles抓包https显示unknown问题解决]]></title>
+    <url>%2F2020%2F07%2F08%2Fweb%2Fcharles-https%2F</url>
+    <content type="text"><![CDATA[抓包前的工作，就不做详细介绍了， 网上有一大堆。这里主要记录下，我抓包的时候，一直显示unknown的原因。 问题描述： 按照网上的教程，比如 Charles抓包https完整的配置完之后，charles一直显示unknown，无法显示。 解决： 在安装手机证书的时候，charles有提示，如下图： 就是说，安装的时候，需要链接到charles的代理上，也就手机端访问chls.pro/ssl之前，需要先链接到charles的代理才可以，手机上的证书需要和电脑端匹配才行的。 如此简单的操作，如此粗浅的逻辑，实在是。。。不应该]]></content>
+      <categories>
+        <category>开发工具</category>
+      </categories>
+      <tags>
+        <tag>开发工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[前端学习路线]]></title>
     <url>%2F2020%2F07%2F06%2Fweb%2Fh5-study-route%2F</url>
     <content type="text"><![CDATA[从我学习的过程中，遇到的难点，已经学习经历，总结下应该学习的知识点。 npm npm中文网 基本的介绍，安装，命令大全，开始时不建议看，可能突然看到这么多，并没有什么重点，大致过一下，有点印象就行，知道有这么个东西，具体使用的时候可以自行百度去查具体实现。 觉得熟悉后，可以当做字典来用。 Node.js 进阶-你应该知道的 npm 知识都在这！ 掘金上的一片介绍文章，有基本的介绍说明，常用的文件的理解等，比较好的一篇文章。 npm scripts 使用指南 阮老师的进阶文章，脚本是npm最强打的功能之一。]]></content>
