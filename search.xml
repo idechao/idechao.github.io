@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[mac日常问题记录]]></title>
+    <url>%2F2020%2F07%2F11%2Fweb%2Fmac-daily-question%2F</url>
+    <content type="text"><![CDATA[Alfred无法搜到到应用程序新安装的程序，在Alfred中无法搜索到。按照网上的提示，重建索引，提示成功，但是并没有成功。 12345// 重建索引sudo mdutil -E /// 结果，然而并未生效Indexing enabled. 使用如下命令可以完美解决： 1sudo mdutil -a -i on]]></content>
+      <categories>
+        <category>mac问题</category>
+      </categories>
+      <tags>
+        <tag>mac问题</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[charles抓包https显示unknown问题解决]]></title>
     <url>%2F2020%2F07%2F08%2Fweb%2Fcharles-https%2F</url>
     <content type="text"><![CDATA[抓包前的工作，就不做详细介绍了， 网上有一大堆。这里主要记录下，我抓包的时候，一直显示unknown的原因。 问题描述： 按照网上的教程，比如 Charles抓包https完整的配置完之后，charles一直显示unknown，无法显示。 解决： 在安装手机证书的时候，charles有提示，如下图： 就是说，安装的时候，需要链接到charles的代理上，也就手机端访问chls.pro/ssl之前，需要先链接到charles的代理才可以，手机上的证书需要和电脑端匹配才行的。 如此简单的操作，如此粗浅的逻辑，实在是。。。不应该]]></content>

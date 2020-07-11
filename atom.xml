@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.idechao.com/"/>
-  <updated>2020-07-08T09:59:07.258Z</updated>
+  <updated>2020-07-11T02:45:26.407Z</updated>
   <id>http://www.idechao.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac日常问题记录</title>
+    <link href="http://www.idechao.com/2020/07/11/web/mac-daily-question/"/>
+    <id>http://www.idechao.com/2020/07/11/web/mac-daily-question/</id>
+    <published>2020-07-11T02:39:44.000Z</published>
+    <updated>2020-07-11T02:45:26.407Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Alfred无法搜到到应用程序"><a href="#Alfred无法搜到到应用程序" class="headerlink" title="Alfred无法搜到到应用程序"></a>Alfred无法搜到到应用程序</h1><p>新安装的程序，在Alfred中无法搜索到。按照网上的提示，重建索引，提示成功，但是并没有成功。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">// 重建索引</span><br><span class="line">sudo mdutil -E /</span><br><span class="line"></span><br><span class="line">// 结果，然而并未生效</span><br><span class="line">Indexing enabled.</span><br></pre></td></tr></table></figure><p>使用如下命令可以完美解决：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mdutil -a -i on</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Alfred无法搜到到应用程序&quot;&gt;&lt;a href=&quot;#Alfred无法搜到到应用程序&quot; class=&quot;headerlink&quot; title=&quot;Alfred无法搜到到应用程序&quot;&gt;&lt;/a&gt;Alfred无法搜到到应用程序&lt;/h1&gt;&lt;p&gt;新安装的程序，在Alfred中无法搜
+      
+    
+    </summary>
+    
+      <category term="mac问题" scheme="http://www.idechao.com/categories/mac%E9%97%AE%E9%A2%98/"/>
+    
+    
+      <category term="mac问题" scheme="http://www.idechao.com/tags/mac%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>charles抓包https显示unknown问题解决</title>
