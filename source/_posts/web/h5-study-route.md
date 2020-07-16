@@ -1,0 +1,25 @@
+---
+title: 前端学习路线
+date: 2020-07-06 11:47:19
+categories:
+tags:
+---
+
+从我学习的过程中，遇到的难点，已经学习经历，总结下应该学习的知识点。
+
+# npm
+
+* [npm中文网](https://www.npmjs.cn/)
+
+	基本的介绍，安装，命令大全，开始时不建议看，可能突然看到这么多，并没有什么重点，大致过一下，有点印象就行，知道有这么个东西，具体使用的时候可以自行百度去查具体实现。
+	
+	觉得熟悉后，可以当做字典来用。
+
+* [Node.js 进阶-你应该知道的 npm 知识都在这！](https://juejin.im/post/5ef7e0066fb9a07e976bc89e?utm_source=gold_browser_extension)
+
+	掘金上的一片介绍文章，有基本的介绍说明，常用的文件的理解等，比较好的一篇文章。
+	
+* [npm scripts 使用指南](http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html)
+
+	阮老师的进阶文章，脚本是npm最强打的功能之一。
+	
