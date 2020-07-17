@@ -243,3 +243,22 @@ position:fixed;  right:100px;  top:100px;
  flex-shrink: 0;
 }
 ```
+
+# flex row子元素设置居右
+
+如下图的样式，橘色父容器设置flex，需要让绿色的子空间居右：
+
+<div style="width:200px;height:40px;background:orange;display:flex;">
+	<div style="width:30px;height:30px;background:blue;border-radius:15px;"></div>
+	<div style="width:30px;height:30px;background:green;border-radius:15px;margin-left:auto;"></div>
+</div>
+
+代码如下，主要需要设置绿色的组件的属性`margin-left:auto;`:
+
+```
+<div style="width:200px;height:40px;background:orange;display:flex;">
+	<div style="width:30px;height:30px;background:blue;border-radius:15px;"></div>
+	<div style="width:30px;height:30px;background:green;border-radius:15px;margin-left:auto;"></div>
+</div>
+
+```
