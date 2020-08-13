@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.idechao.com/"/>
-  <updated>2020-07-11T02:45:26.407Z</updated>
+  <updated>2020-08-13T06:55:24.889Z</updated>
   <id>http://www.idechao.com/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac软件推荐</title>
+    <link href="http://www.idechao.com/2020/08/11/daily/mac-app/"/>
+    <id>http://www.idechao.com/2020/08/11/daily/mac-app/</id>
+    <published>2020-08-11T03:09:39.000Z</published>
+    <updated>2020-08-13T06:55:24.889Z</updated>
+    
+    <content type="html"><![CDATA[<p>平时使用的软件，许多感觉还不错的，这里做个总结推荐。</p><h1 id="五星推荐，日常使用频率高"><a href="#五星推荐，日常使用频率高" class="headerlink" title="五星推荐，日常使用频率高"></a>五星推荐，日常使用频率高</h1><ul><li>Alfred</li></ul><p><img src="https://upload-images.jianshu.io/upload_images/8470469-de629038a3d176f0.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp" alt="Alfred"></p><p>Alfred是一个可以让你彻底释放鼠标的神器，它是一款屡获最佳殊荣的Mac OS X应用程序，它能帮你快速打开网页、快速进行自定义搜索、查看剪贴板历史、快速查询单词等等。搜索你的Mac和web，并通过自定义操作来控制你的Mac，从而提高工作效率。</p><p>附上一个相关文档：<a href="https://sspai.com/tag/Alfred" target="_blank" rel="noopener">少数派-Alfred</a></p><p>一旦沾染就会上瘾的利器。</p><ul><li>1password</li></ul><p>这个是大名鼎鼎的密码管理工具了，好记性永远不如烂笔头，安全可靠有保障，生活必需品。</p><p><a href="https://sspai.com/tag/1Password" target="_blank" rel="noopener">少数派-1password</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;平时使用的软件，许多感觉还不错的，这里做个总结推荐。&lt;/p&gt;
+&lt;h1 id=&quot;五星推荐，日常使用频率高&quot;&gt;&lt;a href=&quot;#五星推荐，日常使用频率高&quot; class=&quot;headerlink&quot; title=&quot;五星推荐，日常使用频率高&quot;&gt;&lt;/a&gt;五星推荐，日常使用频率高&lt;/h1
+      
+    
+    </summary>
+    
+      <category term="日常软件" scheme="http://www.idechao.com/categories/%E6%97%A5%E5%B8%B8%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="日常软件" scheme="http://www.idechao.com/tags/%E6%97%A5%E5%B8%B8%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络小说推荐</title>
+    <link href="http://www.idechao.com/2020/08/07/daily/web-fiction/"/>
+    <id>http://www.idechao.com/2020/08/07/daily/web-fiction/</id>
+    <published>2020-08-07T12:27:38.000Z</published>
+    <updated>2020-08-07T12:30:03.771Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前读过很多的小说，有几个觉得还不错的，自己汇总下，并做一个推荐排序。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;之前读过很多的小说，有几个觉得还不错的，自己汇总下，并做一个推荐排序。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="日常，网络小说" scheme="http://www.idechao.com/categories/%E6%97%A5%E5%B8%B8%EF%BC%8C%E7%BD%91%E7%BB%9C%E5%B0%8F%E8%AF%B4/"/>
+    
+    
+      <category term="网络小说" scheme="http://www.idechao.com/tags/%E7%BD%91%E7%BB%9C%E5%B0%8F%E8%AF%B4/"/>
+    
+  </entry>
   
   <entry>
     <title>mac日常问题记录</title>
@@ -73,9 +125,9 @@
     <link href="http://www.idechao.com/2020/07/06/web/h5-study-route/"/>
     <id>http://www.idechao.com/2020/07/06/web/h5-study-route/</id>
     <published>2020-07-06T03:47:19.000Z</published>
-    <updated>2020-08-07T09:03:04.789Z</updated>
+    <updated>2020-08-13T06:53:59.568Z</updated>
     
-    <content type="html"><![CDATA[<p>从我学习的过程中，遇到的难点，已经学习经历，总结下应该学习的知识点。</p><h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h1><ul><li><p><a href="https://juejin.im/post/5ef7e0066fb9a07e976bc89e?utm_source=gold_browser_extension" target="_blank" rel="noopener">Node.js 进阶-你应该知道的 npm 知识都在这！</a></p><p>  掘金上的一片介绍文章，有基本的介绍说明，常用的文件的理解等，比较好的一篇文章。</p></li><li><p><a href="https://www.npmjs.cn/" target="_blank" rel="noopener">npm中文网</a></p><p>  基本的介绍，安装，命令大全，开始时不建议看，可能突然看到这么多，并没有什么重点，大致过一下，有点印象就行，知道有这么个东西，具体使用的时候可以自行百度去查具体实现。</p><p>  觉得熟悉后，可以当做字典来用。</p></li><li><p><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">npm scripts 使用指南</a></p><p>  阮老师的进阶文章，脚本是npm最强打的功能之一。</p></li></ul><h1 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h1><p><code>TypeScript</code>是微软出的<code>JavaScript</code>的超集，最终也是会被编译成<code>JavaScript</code>，现在一些公司的前端要求，就是必须会<code>TypeScript</code>。</p><ul><li><p><a href="https://jspang.com/detailed?id=66#toc223" target="_blank" rel="noopener">技术胖的TypeScript教程-2020新版</a></p><p>  博客里面有文本介绍，也有视频说明，总体对胖哥好感爆棚，一些细节的东西，容易采坑的细节都会说一下，相对于官网的生硬的文本，更倾向于这这个教程。</p></li><li><p><a href="https://www.tslang.cn/docs/handbook/basic-types.html" target="_blank" rel="noopener">TypeScript官网</a></p><p>  我建议先看看上面的教程，然后再看官网的文档，这个建议挡住文档进行查阅使用</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>从我学习的过程中，遇到的难点，已经学习经历，总结下应该学习的知识点。</p><h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h1><ul><li><p><a href="https://juejin.im/post/5ef7e0066fb9a07e976bc89e?utm_source=gold_browser_extension" target="_blank" rel="noopener">Node.js 进阶-你应该知道的 npm 知识都在这！</a></p><p>  掘金上的一片介绍文章，有基本的介绍说明，常用的文件的理解等，比较好的一篇文章。</p></li><li><p><a href="https://www.npmjs.cn/" target="_blank" rel="noopener">npm中文网</a></p><p>  基本的介绍，安装，命令大全，开始时不建议看，可能突然看到这么多，并没有什么重点，大致过一下，有点印象就行，知道有这么个东西，具体使用的时候可以自行百度去查具体实现。</p><p>  觉得熟悉后，可以当做字典来用。</p></li><li><p><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">npm scripts 使用指南</a></p><p>  阮老师的进阶文章，脚本是npm最强打的功能之一。</p></li></ul><h1 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h1><p><code>TypeScript</code>是微软出的<code>JavaScript</code>的超集，最终也是会被编译成<code>JavaScript</code>，现在一些公司的前端要求，就是必须会<code>TypeScript</code>。</p><ul><li><p><a href="https://jspang.com/detailed?id=66#toc223" target="_blank" rel="noopener">技术胖的TypeScript教程-2020新版</a></p><p>  博客里面有文本介绍，也有视频说明，总体对胖哥好感爆棚，一些细节的东西，容易采坑的细节都会说一下，相对于官网的生硬的文本，更倾向于这这个教程。</p></li><li><p><a href="https://www.tslang.cn/docs/handbook/basic-types.html" target="_blank" rel="noopener">TypeScript官网</a></p><p>  官网文档，内容齐全，学习的时候个人偏向于上面那个。</p></li></ul><h1 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h1><ul><li><p><a href="https://www.gulpjs.com.cn/docs/getting-started/quick-start/" target="_blank" rel="noopener">gulp.js中文网</a></p><p>  有详细的指令介绍，以及api的介绍</p></li></ul>]]></content>
     
     <summary type="html">
     
