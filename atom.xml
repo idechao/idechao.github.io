@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.idechao.com/"/>
-  <updated>2020-08-13T06:55:24.889Z</updated>
+  <updated>2020-10-13T09:16:03.509Z</updated>
   <id>http://www.idechao.com/</id>
   
   <author>
@@ -17,13 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>nodejs脚本获取用户输入</title>
+    <link href="http://www.idechao.com/2020/10/13/web/nodejs-get-input/"/>
+    <id>http://www.idechao.com/2020/10/13/web/nodejs-get-input/</id>
+    <published>2020-10-13T06:52:05.000Z</published>
+    <updated>2020-10-13T09:16:03.509Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用node脚本的时候，获取用户输入的内容：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">const readline = require(&apos;readline&apos;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">const rl = readline.createInterface(&#123;</span><br><span class="line">  input: process.stdin,</span><br><span class="line">  output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">rl.question(&apos;你如何看待 Node.js 中文网？&apos;, (answer) =&gt; &#123;</span><br><span class="line">  // TODO：将答案记录在数据库中。</span><br><span class="line">  console.log(`感谢您的宝贵意见：$&#123;answer&#125;`);</span><br><span class="line"></span><br><span class="line">  rl.close();</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>比如一个简单的获取用户输入姓名、年龄的小脚本：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">const readline = require(&apos;readline&apos;);</span><br><span class="line"></span><br><span class="line">const rl = readline.createInterface(&#123;</span><br><span class="line">    input: process.stdin,</span><br><span class="line">    output: process.stdout</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">function getName() &#123;</span><br><span class="line">    return new Promise(resolve =&gt; &#123;</span><br><span class="line">        rl.question(&apos;输入name：&apos;, (name) =&gt; &#123;</span><br><span class="line">            resolve(name)</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function getAge() &#123;</span><br><span class="line">    return new Promise(resolve =&gt; &#123;</span><br><span class="line">        rl.question(&apos;输入age：&apos;, (age) =&gt; &#123;</span><br><span class="line">            // 一个close就可以了</span><br><span class="line">            rl.close();</span><br><span class="line">            resolve(age)</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">async function getInfo() &#123;</span><br><span class="line">    const name = await getName()</span><br><span class="line">    const age = await getAge()</span><br><span class="line"></span><br><span class="line">    console.log(name + &apos;的年龄是：&apos; + age)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getInfo()</span><br></pre></td></tr></table></figure><p>运行的话就： node xx.js</p><p>参考：<a href="http://nodejs.cn/api/readline.html" target="_blank" rel="noopener">Nodejs中文网</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;使用node脚本的时候，获取用户输入的内容：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://www.idechao.com/categories/JavaScript/"/>
+    
+      <category term="Nodejs" scheme="http://www.idechao.com/categories/JavaScript/Nodejs/"/>
+    
+    
+      <category term="Nodejs" scheme="http://www.idechao.com/tags/Nodejs/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mac软件推荐</title>
     <link href="http://www.idechao.com/2020/08/11/daily/mac-app/"/>
     <id>http://www.idechao.com/2020/08/11/daily/mac-app/</id>
     <published>2020-08-11T03:09:39.000Z</published>
-    <updated>2020-08-13T06:55:24.889Z</updated>
+    <updated>2020-08-31T11:19:39.640Z</updated>
     
-    <content type="html"><![CDATA[<p>平时使用的软件，许多感觉还不错的，这里做个总结推荐。</p><h1 id="五星推荐，日常使用频率高"><a href="#五星推荐，日常使用频率高" class="headerlink" title="五星推荐，日常使用频率高"></a>五星推荐，日常使用频率高</h1><ul><li>Alfred</li></ul><p><img src="https://upload-images.jianshu.io/upload_images/8470469-de629038a3d176f0.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp" alt="Alfred"></p><p>Alfred是一个可以让你彻底释放鼠标的神器，它是一款屡获最佳殊荣的Mac OS X应用程序，它能帮你快速打开网页、快速进行自定义搜索、查看剪贴板历史、快速查询单词等等。搜索你的Mac和web，并通过自定义操作来控制你的Mac，从而提高工作效率。</p><p>附上一个相关文档：<a href="https://sspai.com/tag/Alfred" target="_blank" rel="noopener">少数派-Alfred</a></p><p>一旦沾染就会上瘾的利器。</p><ul><li>1password</li></ul><p>这个是大名鼎鼎的密码管理工具了，好记性永远不如烂笔头，安全可靠有保障，生活必需品。</p><p><a href="https://sspai.com/tag/1Password" target="_blank" rel="noopener">少数派-1password</a></p>]]></content>
+    <content type="html"><![CDATA[<p>平时使用的软件，许多感觉还不错的，这里做个总结推荐。</p><h1 id="五星推荐，日常使用频率高"><a href="#五星推荐，日常使用频率高" class="headerlink" title="五星推荐，日常使用频率高"></a>五星推荐，日常使用频率高</h1><ul><li>Alfred</li></ul><p>Alfred是一个可以让你彻底释放鼠标的神器，它是一款屡获最佳殊荣的Mac OS X应用程序，它能帮你快速打开网页、快速进行自定义搜索、查看剪贴板历史、快速查询单词等等。搜索你的Mac和web，并通过自定义操作来控制你的Mac，从而提高工作效率。</p><p>附上一个相关文档：<a href="https://sspai.com/tag/Alfred" target="_blank" rel="noopener">少数派-Alfred</a></p><p>一旦沾染就会上瘾的利器。</p><ul><li>1password</li></ul><p>这个是大名鼎鼎的密码管理工具了，好记性永远不如烂笔头，安全可靠有保障，生活必需品。</p><p><a href="https://sspai.com/tag/1Password" target="_blank" rel="noopener">少数派-1password</a></p><ul><li><p>Maipo</p><p>mac上的微博客户端。因为我是重度微博用户，想要微博的实时内容更新，但是经常使用手机不方便，网页版也不合适，微博自己又没有mac端的，一系列的问题，让我找到了Maipo。</p></li><li><p>Dozer</p></li></ul><p>隐藏mac顶部程序图标。</p><p>当开的mac程序多的时候，顶部程序图片挨个排开，这时候打开比如Chrome，会有部分程序的图标挡住，这时候就显示Dozer的用处了。可以自定义要显示的程序图标，一些可以不展示的，比如音量，蓝牙，和一些其他不常用的，都可以隐藏起来。</p><p><a href="https://sspai.com/post/52826" target="_blank" rel="noopener">少数派-Dozer</a></p><h2 id="四星，个人比较喜欢，但可替换"><a href="#四星，个人比较喜欢，但可替换" class="headerlink" title="四星，个人比较喜欢，但可替换"></a>四星，个人比较喜欢，但可替换</h2><ul><li><p>HyperDock</p><p>快捷布局app窗口的工具，再比如鼠标放到docker上的程序上时，能预览所有打开的窗口。</p><p>不给五星是因为有的人喜欢mac默认的切换功能，比如设置四指滑动展示所有的软件，可以向上，是所有app，向下，当前app，这个本身的功能也很强大</p><ul><li>MacDown</li></ul><p>极简风格markdown编辑器，实时预览功能，不具备存储管理功能，但其实就是需要这么一个简单的功能方便日常来编辑。什么？不知道什么叫markdown，百度一下，你就知道~</p><ul><li>One Switch</li></ul><p>一个mac顶部菜单的小工具，但是内容很丰富，比如有保持常亮，显示隐藏文件，夜览等功能，方便不占空间，推荐</p><ul><li>Reeder</li></ul><p>rss源订阅软件，关注常用的信息源，一键订阅，不错过消息，不必去每个地址去查看了，赞~</p><ul><li>Sip</li></ul><p>一个取色器软件，可以获取屏幕上任何点的色值</p></li></ul><h2 id="三星，喜欢，但非必须"><a href="#三星，喜欢，但非必须" class="headerlink" title="三星，喜欢，但非必须"></a>三星，喜欢，但非必须</h2><ul><li><p>Wallpaper Wizard</p><p>动态壁纸app，开始有点不喜欢的是，得自己选择喜欢的分类添加，后来发现这个是亮点，不选择的话看到不喜欢的壁纸是比较难受的。壁纸也高清，看起来很舒服，种类也多，感觉比其他的如 24 Hour Wallpaper 要好一些</p></li></ul>]]></content>
     
     <summary type="html">
     
@@ -47,16 +75,17 @@
     <link href="http://www.idechao.com/2020/08/07/daily/web-fiction/"/>
     <id>http://www.idechao.com/2020/08/07/daily/web-fiction/</id>
     <published>2020-08-07T12:27:38.000Z</published>
-    <updated>2020-08-07T12:30:03.771Z</updated>
+    <updated>2020-08-19T12:43:04.597Z</updated>
     
-    <content type="html"><![CDATA[<p>之前读过很多的小说，有几个觉得还不错的，自己汇总下，并做一个推荐排序。</p>]]></content>
+    <content type="html"><![CDATA[<p>之前读过很多的小说，有几个觉得还不错的，自己汇总下，并做一个推荐排序。</p><h1 id="五星推荐"><a href="#五星推荐" class="headerlink" title="五星推荐"></a>五星推荐</h1><ul><li><p>明朝伪君子 </p><p>贼眉鼠眼 著</p><p>百度小说上，属于古代言情·穿越重生·两宋元明·军事</p><p>起点中文网上为历史频道，两宋元明。</p></li></ul><ul><li><p>妻乃上将军  </p><p>贱宗首席弟子 著</p><p>起点中文网上为历史频道，架空历史。</p></li></ul>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;之前读过很多的小说，有几个觉得还不错的，自己汇总下，并做一个推荐排序。&lt;/p&gt;
-
+&lt;h1 id=&quot;五星推荐&quot;&gt;&lt;a href=&quot;#五星推荐&quot; class=&quot;headerlink&quot; title=&quot;五星推荐&quot;&gt;&lt;/a&gt;五星推荐&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;明朝伪君子 &lt;/p&gt;
       
     
     </summary>
@@ -125,7 +154,7 @@
     <link href="http://www.idechao.com/2020/07/06/web/h5-study-route/"/>
     <id>http://www.idechao.com/2020/07/06/web/h5-study-route/</id>
     <published>2020-07-06T03:47:19.000Z</published>
-    <updated>2020-08-13T06:53:59.568Z</updated>
+    <updated>2020-08-19T11:32:43.640Z</updated>
     
     <content type="html"><![CDATA[<p>从我学习的过程中，遇到的难点，已经学习经历，总结下应该学习的知识点。</p><h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h1><ul><li><p><a href="https://juejin.im/post/5ef7e0066fb9a07e976bc89e?utm_source=gold_browser_extension" target="_blank" rel="noopener">Node.js 进阶-你应该知道的 npm 知识都在这！</a></p><p>  掘金上的一片介绍文章，有基本的介绍说明，常用的文件的理解等，比较好的一篇文章。</p></li><li><p><a href="https://www.npmjs.cn/" target="_blank" rel="noopener">npm中文网</a></p><p>  基本的介绍，安装，命令大全，开始时不建议看，可能突然看到这么多，并没有什么重点，大致过一下，有点印象就行，知道有这么个东西，具体使用的时候可以自行百度去查具体实现。</p><p>  觉得熟悉后，可以当做字典来用。</p></li><li><p><a href="http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html" target="_blank" rel="noopener">npm scripts 使用指南</a></p><p>  阮老师的进阶文章，脚本是npm最强打的功能之一。</p></li></ul><h1 id="TypeScript"><a href="#TypeScript" class="headerlink" title="TypeScript"></a>TypeScript</h1><p><code>TypeScript</code>是微软出的<code>JavaScript</code>的超集，最终也是会被编译成<code>JavaScript</code>，现在一些公司的前端要求，就是必须会<code>TypeScript</code>。</p><ul><li><p><a href="https://jspang.com/detailed?id=66#toc223" target="_blank" rel="noopener">技术胖的TypeScript教程-2020新版</a></p><p>  博客里面有文本介绍，也有视频说明，总体对胖哥好感爆棚，一些细节的东西，容易采坑的细节都会说一下，相对于官网的生硬的文本，更倾向于这这个教程。</p></li><li><p><a href="https://www.tslang.cn/docs/handbook/basic-types.html" target="_blank" rel="noopener">TypeScript官网</a></p><p>  官网文档，内容齐全，学习的时候个人偏向于上面那个。</p></li></ul><h1 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h1><ul><li><p><a href="https://www.gulpjs.com.cn/docs/getting-started/quick-start/" target="_blank" rel="noopener">gulp.js中文网</a></p><p>  有详细的指令介绍，以及api的介绍</p></li></ul>]]></content>
     
