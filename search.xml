@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Nodejs那些事儿]]></title>
+    <url>%2F2020%2F10%2F15%2Fweb%2FNodejs-daily%2F</url>
+    <content type="text"><![CDATA[本文记录Nodejs日常相关记录。 util.promisifyutil.promisify是在node.js 8.x版本中新增的一个工具，用于将老式的Error first callback转换为Promise对象。 首先要解释一下这种工具大致的实现思路，因为在Node中异步回调有一个约定：Error first，也就是说回调函数中的第一个参数一定要是Error对象，其余参数才是正确时的数据。 举例使用如下： 123456789const &#123; promisify &#125; = require(&apos;util&apos;)const exec = promisify(require(&apos;child_process&apos;).exec)async function execExample() &#123; const &#123;stdout, stderr &#125; = await exec(&apos;ls&apos;); console.log(stdout) console.log(stderr)&#125;execExample()]]></content>
+      <categories>
+        <category>Nodejs</category>
+      </categories>
+      <tags>
+        <tag>Nodejs</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[nodejs脚本获取用户输入]]></title>
     <url>%2F2020%2F10%2F13%2Fweb%2Fnodejs-get-input%2F</url>
     <content type="text"><![CDATA[使用node脚本的时候，获取用户输入的内容： 1234567891011121314const readline = require(&apos;readline&apos;);const rl = readline.createInterface(&#123; input: process.stdin, output: process.stdout&#125;);rl.question(&apos;你如何看待 Node.js 中文网？&apos;, (answer) =&gt; &#123; // TODO：将答案记录在数据库中。 console.log(`感谢您的宝贵意见：$&#123;answer&#125;`); rl.close();&#125;); 比如一个简单的获取用户输入姓名、年龄的小脚本： 123456789101112131415161718192021222324252627282930313233const readline = require(&apos;readline&apos;);const rl = readline.createInterface(&#123; input: process.stdin, output: process.stdout&#125;);function getName() &#123; return new Promise(resolve =&gt; &#123; rl.question(&apos;输入name：&apos;, (name) =&gt; &#123; resolve(name) &#125;); &#125;)&#125;function getAge() &#123; return new Promise(resolve =&gt; &#123; rl.question(&apos;输入age：&apos;, (age) =&gt; &#123; // 一个close就可以了 rl.close(); resolve(age) &#125;); &#125;)&#125;async function getInfo() &#123; const name = await getName() const age = await getAge() console.log(name + &apos;的年龄是：&apos; + age)&#125;getInfo() 运行的话就： node xx.js 参考：Nodejs中文网]]></content>
