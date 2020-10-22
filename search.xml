@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[JavaScript那些事]]></title>
+    <url>%2F2020%2F10%2F22%2Fweb%2Fjs-deep%2F</url>
+    <content type="text"><![CDATA[给数组增加firstObj方法12345678910111213// if (!Array.prototype.firstObj) &#123; // 这里开始可以先判断是否有此方法 Array.prototype.firstObj = function() &#123; if (!Array.isArray(this) || this.length === 0) &#123; return null &#125; return this[0]; &#125;// &#125;const myArray = [1,2,3,4,5,6]console.log(myArray.firstObj());]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Nodejs那些事儿]]></title>
     <url>%2F2020%2F10%2F15%2Fweb%2FNodejs-daily%2F</url>
     <content type="text"><![CDATA[本文记录Nodejs日常相关记录。 util.promisifyutil.promisify是在node.js 8.x版本中新增的一个工具，用于将老式的Error first callback转换为Promise对象。 首先要解释一下这种工具大致的实现思路，因为在Node中异步回调有一个约定：Error first，也就是说回调函数中的第一个参数一定要是Error对象，其余参数才是正确时的数据。 举例使用如下： 123456789const &#123; promisify &#125; = require(&apos;util&apos;)const exec = promisify(require(&apos;child_process&apos;).exec)async function execExample() &#123; const &#123;stdout, stderr &#125; = await exec(&apos;ls&apos;); console.log(stdout) console.log(stderr)&#125;execExample()]]></content>
