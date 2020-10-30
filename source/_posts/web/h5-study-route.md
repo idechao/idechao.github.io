@@ -41,3 +41,15 @@ tags:
 
 	有详细的指令介绍，以及api的介绍
 	
+# React
+
+这个按照胖哥的视频教程来的，基本目录结构如下，后面附带学习起止时间：
+
+[React学习路线](https://jspang.com/detailed?id=56)
+
+- React16版基础视频【28集】2020.10.15-10.23
+- Redux免费视频教程【24集】10.25
+- React Router免费视频教程【9集】
+- React Hooks 免费视频教程【共11集】
+- React服务端渲染框架Next.js入门(共12集)
+- React Hooks+Egg.js博客实战视频教程(更新39集)
