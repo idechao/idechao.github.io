@@ -662,6 +662,15 @@ showName("Julius", "Caesar");
 showName("Ilya");
 ```
 
+# 数组解构
+
+```
+let color = ['red', 'green', 'blue']
+let [first, second] = color
+console.log(first)	// red
+console.log(second)	// second
+```
+
 # Q&A 
 
 ## 数组遍历，写法问题导致失败

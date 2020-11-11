@@ -48,8 +48,24 @@ tags:
 [React学习路线](https://jspang.com/detailed?id=56)
 
 - React16版基础视频【28集】2020.10.15-10.23
-- Redux免费视频教程【24集】10.25
-- React Router免费视频教程【9集】
+- Redux免费视频教程【24集】10.25-11.2
+- React Router免费视频教程【9集】 11.3-11.3
 - React Hooks 免费视频教程【共11集】
 - React服务端渲染框架Next.js入门(共12集)
 - React Hooks+Egg.js博客实战视频教程(更新39集)
+
+- [React 技术栈系列教程 - 阮一峰](http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html)
+- [React Router 使用教程 - 阮一峰](http://www.ruanyifeng.com/blog/2016/05/react_router.html)
+
+- [react-router-tutorial
+Archived](https://github.com/reactjs/react-router-tutorial/tree/master/lessons)
+
+# Redux
+
+因为上面的React包含redux，所以视频部分，可以看看上面的
+
+- [Redux免费视频教程从基础到高级-胖哥](https://www.bilibili.com/video/BV1w441137ss?p=24)
+- [Redux 入门教程（一）：基本用法 - 阮一峰](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
+- [Redux 入门教程（二）：中间件与异步操作 - 阮一峰](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_two_async_operations.html)
+- [Redux 入门教程（三）：React-Redux 的用法 - 阮一峰](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
+- [Redux 中文文档](https://www.redux.org.cn/)
