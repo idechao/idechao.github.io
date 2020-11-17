@@ -12,6 +12,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Electron总结]]></title>
+    <url>%2F2020%2F10%2F30%2Fweb%2Felectron-debug%2F</url>
+    <content type="text"><![CDATA[electron 日常问题记录。 跨越请求限制问题增加如下配置： 123mainWindow = new BrowserWindow(&#123; webPreferences: &#123;webSecurity: false&#125;,&#125;) webSecurity是什么意思呢？顾名思义，他是设置web安全性，如果参数设置为 false，它将禁用相同地方的规则 (通常测试服), 并且如果有2个非用户设置的参数，就设置 allowDisplayingInsecureContent 和 allowRunningInsecureContent的值为true。 （webSecurity的默认值为true） allowDisplayingInsecureContent表示是否允许一个使用 https的界面来展示由 http URLs 传过来的资源。默认false。allowRunningInsecureContent表示是否允许一个使用 https的界面来渲染由 http URLs 提交的html，css，javascript。默认为 false。]]></content>
+      <categories>
+        <category>Electron</category>
+      </categories>
+      <tags>
+        <tag>Electron</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JavaScript那些事]]></title>
     <url>%2F2020%2F10%2F22%2Fweb%2Fjs-deep%2F</url>
     <content type="text"><![CDATA[给数组增加firstObj方法12345678910111213// if (!Array.prototype.firstObj) &#123; // 这里开始可以先判断是否有此方法 Array.prototype.firstObj = function() &#123; if (!Array.isArray(this) || this.length === 0) &#123; return null &#125; return this[0]; &#125;// &#125;const myArray = [1,2,3,4,5,6]console.log(myArray.firstObj()); 闭包，返回带参数的函数正常JavaScript返回一个函数很正常，对于返回的函数，带参数的情况，如下代码： 123456789101112function sayHello (name) &#123; return function greet (greeting) &#123; console.log( greeting + &apos; &apos; + name) &#125;;&#125;// greetMikeWith is now the returned function, which accepts a `greeting` param// but still has a reference to `name`var greetMikeWith = sayHello(&apos;Mike&apos;);greetMikeWith(&apos;Hello!&apos;); // Hello! MikegreetMikeWith(&apos;Happy Holidays&apos;); // Happy Holidays Mike 代码很简单，greetMikeWith是一个返回函数，此时里面的name值，已经确认，是Mike，在调用sayHello的时候确认的参数值。 所以在调用greetMikeWith的时候，相当于直接调用greet参数： 123function greet (greeting) &#123; console.log( greeting + &apos; &apos; + &apos;Mike&apos;)&#125;; MDN的介绍：Closures 提取字符串中的数字1234var str = &apos;123.456plus456.789加12后缀&apos;var numArr = str.match(/-?([1-9]\d*(\.\d*)*|0\.[1-9]\d*)/g)console.log(numArr) // [ &apos;123.456&apos;, &apos;456.789&apos;, &apos;12&apos; ]]]></content>

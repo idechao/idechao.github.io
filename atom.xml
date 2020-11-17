@@ -43,6 +43,33 @@
   </entry>
   
   <entry>
+    <title>Electron总结</title>
+    <link href="http://www.idechao.com/2020/10/30/web/electron-debug/"/>
+    <id>http://www.idechao.com/2020/10/30/web/electron-debug/</id>
+    <published>2020-10-30T07:55:59.000Z</published>
+    <updated>2020-11-17T13:22:09.999Z</updated>
+    
+    <content type="html"><![CDATA[<p>electron 日常问题记录。</p><h1 id="跨越请求限制问题"><a href="#跨越请求限制问题" class="headerlink" title="跨越请求限制问题"></a>跨越请求限制问题</h1><p>增加如下配置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mainWindow = new BrowserWindow(&#123;</span><br><span class="line">webPreferences: &#123;webSecurity: false&#125;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>webSecurity是什么意思呢？顾名思义，他是设置web安全性，如果参数设置为 false，它将禁用相同地方的规则 (通常测试服), 并且如果有2个非用户设置的参数，就设置 allowDisplayingInsecureContent 和 allowRunningInsecureContent的值为true。 （webSecurity的默认值为true）</p><p>allowDisplayingInsecureContent表示是否允许一个使用 https的界面来展示由 http URLs 传过来的资源。默认false。<br>allowRunningInsecureContent表示是否允许一个使用 https的界面来渲染由 http URLs 提交的html，css，javascript。默认为 false。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;electron 日常问题记录。&lt;/p&gt;
+&lt;h1 id=&quot;跨越请求限制问题&quot;&gt;&lt;a href=&quot;#跨越请求限制问题&quot; class=&quot;headerlink&quot; title=&quot;跨越请求限制问题&quot;&gt;&lt;/a&gt;跨越请求限制问题&lt;/h1&gt;&lt;p&gt;增加如下配置：&lt;/p&gt;
+&lt;figure cl
+      
+    
+    </summary>
+    
+      <category term="Electron" scheme="http://www.idechao.com/categories/Electron/"/>
+    
+    
+      <category term="Electron" scheme="http://www.idechao.com/tags/Electron/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript那些事</title>
     <link href="http://www.idechao.com/2020/10/22/web/js-deep/"/>
     <id>http://www.idechao.com/2020/10/22/web/js-deep/</id>
