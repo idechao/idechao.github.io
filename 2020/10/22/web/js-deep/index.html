@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="idechao">
 <meta property="og:description" content="嵌套结构赋值-const嵌套12345678910111213141516171819202122232425const metadata = &amp;#123;  title: &amp;apos;Scratchpad&amp;apos;,  translations: [    &amp;#123;      locale: &amp;apos;de&amp;apos;,      localization_tags: [],">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-12-11T07:06:20.374Z">
+<meta property="og:updated_time" content="2020-12-30T09:00:13.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript那些事">
 <meta name="twitter:description" content="嵌套结构赋值-const嵌套12345678910111213141516171819202122232425const metadata = &amp;#123;  title: &amp;apos;Scratchpad&amp;apos;,  translations: [    &amp;#123;      locale: &amp;apos;de&amp;apos;,      localization_tags: [],">
@@ -473,7 +473,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2020-12-11 15:06:20" itemprop="dateModified" datetime="2020-12-11T15:06:20+08:00">2020-12-11</time>
+                <time title="Modified: 2020-12-30 17:00:13" itemprop="dateModified" datetime="2020-12-30T17:00:13+08:00">2020-12-30</time>
               
             
           </span>
@@ -534,6 +534,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function greet (greeting) &#123;</span><br><span class="line">    console.log( greeting + &apos; &apos; + &apos;Mike&apos;)</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>MDN的介绍：<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Closures" target="_blank" rel="noopener">Closures</a></p>
 <h1 id="提取字符串中的数字"><a href="#提取字符串中的数字" class="headerlink" title="提取字符串中的数字"></a>提取字符串中的数字</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var str = &apos;123.456plus456.789加12后缀&apos;</span><br><span class="line">var numArr = str.match(/-?([1-9]\d*(\.\d*)*|0\.[1-9]\d*)/g)</span><br><span class="line"></span><br><span class="line">console.log(numArr)	// [ &apos;123.456&apos;, &apos;456.789&apos;, &apos;12&apos; ]</span><br></pre></td></tr></table></figure>
+<h1 id="promise嵌套"><a href="#promise嵌套" class="headerlink" title="promise嵌套"></a>promise嵌套</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">function a() &#123;</span><br><span class="line">    return new Promise(resolve =&gt; &#123;</span><br><span class="line">        setTimeout(()=&gt;&#123;</span><br><span class="line">            console.log(&apos;aaaaaaa&apos;)</span><br><span class="line">            resolve()</span><br><span class="line">        &#125;, 100)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 可以直接返回，返回的是promise</span><br><span class="line">function c() &#123;</span><br><span class="line">    return a()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 这种方式是错的，promise没有闭合，不会走到then的方法</span><br><span class="line">function c2() &#123;</span><br><span class="line">    return new Promise(resolve =&gt; &#123;</span><br><span class="line">        return a()</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// async 默认会包一个promise，所以也是对的</span><br><span class="line">async function c3() &#123;</span><br><span class="line">    await a()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -590,8 +591,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/10/30/web/electron-debug/" rel="prev" title="Electron总结">
-                Electron总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/10/30/web/electron-react/" rel="prev" title="Electron+React应用，完美解决启动问题">
+                Electron+React应用，完美解决启动问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -835,7 +836,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#嵌套结构赋值-const嵌套"><span class="nav-number">1.</span> <span class="nav-text">嵌套结构赋值-const嵌套</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#给数组增加firstObj方法"><span class="nav-number">2.</span> <span class="nav-text">给数组增加firstObj方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#闭包，返回带参数的函数"><span class="nav-number">3.</span> <span class="nav-text">闭包，返回带参数的函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#提取字符串中的数字"><span class="nav-number">4.</span> <span class="nav-text">提取字符串中的数字</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#嵌套结构赋值-const嵌套"><span class="nav-number">1.</span> <span class="nav-text">嵌套结构赋值-const嵌套</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#给数组增加firstObj方法"><span class="nav-number">2.</span> <span class="nav-text">给数组增加firstObj方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#闭包，返回带参数的函数"><span class="nav-number">3.</span> <span class="nav-text">闭包，返回带参数的函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#提取字符串中的数字"><span class="nav-number">4.</span> <span class="nav-text">提取字符串中的数字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#promise嵌套"><span class="nav-number">5.</span> <span class="nav-text">promise嵌套</span></a></li></ol></div>
             
 
           </div>
